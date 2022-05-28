@@ -1,18 +1,96 @@
 "use strict";
-// && - логічне 'і' 
+// && - логічне 'і'
 // || - логічне 'або'
 // ! - логічне 'не'
 
+// let arr1 = [1, 5, -7, 9, 10];
+// let arr2 = [6, 7, -10, 5, 8];
+
+// let arr3 = arr1.filter(elem => arr2.includes(elem));  
+// let object = {};
+
+// function isEmpty(obj) {
+//     return Object.keys(obj).length === 0;
+// }
+
+// console.log(isEmpty(object));
+// console.log(arr3);
+
+const total = [-2, -10, 12, 3, 34].reduce((previousValue, number) => {
+    return number >= 0 ? previousValue + number: previousValue;
+  }, 0);
+  
+  console.log(total);
+
+
+/*
+function getFrequency(string) {
+    var freq = {};
+    for (var i=0; i<string.length;i++) {
+        var character = string.charAt(i);
+        if (freq[character]) {
+           freq[character]++;
+        } else {
+           freq[character] = 1;
+        }
+    }
+
+    return freq;
+};
+
+console.log(getFrequency("hello"));
+*/
+// function longestWord(string) {
+//     var str = string.split(" ");
+//     var longest = 0;
+//     var word = null;
+//     for (var i = 0; i < str.length ; i++) {
+//         if (longest < str[i].length) {
+//             longest = str[i].length;
+//             word = str[i];
+//         }
+//     }
+//     return word;
+// }
+// let a = "The car sjdn sadasdasd ds";
+// console.log(longestWord(a));
+// // console.log(typeof typeof(undefined));
+// let str = String.raw `Hello \t ECMAScript ${2 * 3}!`;
+// console.log(str);
+
+// function f(num) {
+//     if (num <= 1) return 1;
+//     return f(num - 1) + f(num - 2);
+// }
+
+// console.log(5);
+
+// let str = 'abc';
+// console.log([...str].length);
+
+// let a = 100;
+// if (a > 50) {
+//     let a = 20;
+// }
+
+// console.log(a);
+// let arr = new Array(10);
+// for (let i = 0; i < arr.length; i++)
+// {
+//     arr.fill(i, i);    
+// }
+
+// console.log(arr);
 /*
 Оператор ?? повертає перший аргумент, 
 якщо він не null / undefined, інакше другий  
 */
 
-let name;
-let car = 'BMW';
+// let name;
+// let car = 'BMW';
 
-console.log(name ?? "Без ім'я"); // Без ім'я
-console.log(car ?? "Без ім'я"); // BMW
+// console.log(name ?? "Без ім'я"); // Без ім'я
+// console.log(car ?? "Без ім'я"); // BMW
 
 // Оператор строгого порівняння (без приведення типів)
 /*

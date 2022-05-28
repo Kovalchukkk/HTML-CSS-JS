@@ -18,3 +18,6 @@ let num = Number(strNum);
 let str_userAge = String(userAge);
 console.log(typeof num);
 console.log(typeof str_userAge);
+
+let arr = [1, 2 , 3];
+console.log(typeof arr);
